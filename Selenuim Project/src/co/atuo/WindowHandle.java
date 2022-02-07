@@ -1,3 +1,4 @@
+
 package co.atuo;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class WindowHandle {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Smart\\Desktop\\A\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\mahesh\\Desktop\\Awebdr\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
 		
@@ -38,7 +39,7 @@ public class WindowHandle {
 //				driver.switchTo().window(windwo);
 //				System.out.println(driver.getTitle());
 //			}
-			System.out.println(pageTitle);
+			System.out.println(pageTitle); 
 		}
 		
 		//using list (Arralist)
@@ -72,6 +73,7 @@ public class WindowHandle {
 		}
 		
 		//to open new blank window 
+		driver.switchTo().window(parewindow);
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.get("https://testng.org/doc/documentation-main.html");
 	}
